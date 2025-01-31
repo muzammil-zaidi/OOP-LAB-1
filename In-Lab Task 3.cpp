@@ -35,7 +35,7 @@ int Donations(int n1,int n2){
 
 int main(){
     string event1[5],event2[5],name;
-    int n1,n2;
+    int n1,n2,donation;
 
     Participants("Event 1",event1,n1);
     Participants("Event 2",event2,n2);
@@ -69,8 +69,8 @@ int main(){
         cout<<name<<" is not registered in either Event!\n";
     }
 
-    int totalDonations=Donations(n1,n2);
-    cout<<"\nTotal donation amount collected from both events: $"<<totalDonations<<endl;
+    donation=Donations(n1,n2);
+    cout<<"\nTotal donation amount collected from both events: $"<<donation<<endl;
 
     return 0;
 }
